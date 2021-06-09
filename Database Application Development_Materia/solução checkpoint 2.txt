@@ -1,0 +1,274 @@
+
+O QUE FOI SOLICITADO: 
+CHECKPOINT 2 - 2TDS - DISCIPLINA: DATABASE DEVELOPMENT APPLICATION.
+
+PROBLEMA: UMA ESCOLA POSSUI DEZENAS DE CAMPUS, CENTENAS DE CURSOS, MILHARES DE TURMAS E MILHÕES 
+          DE ALUNOS. PRECISA CONTROLAR TUDO ISSO, MAS A NECESSIDADE MAIS URGENTE É A TRANSFERÊNCIA 
+          DE TURMA QUE SÃO SOLICITADAS PELOS ALUNOS.  EMBORA DISPONHA DE TODAS AS INFORMAÇÕES 
+          NECESSÁRIAS, AS RECLAMAÇÕES DOS ALUNOS SÃO CONSTANTES E JÁ FOI IDENTIFICADO QUE O 
+          PROBLEMA SÃO OS PROGRAMAS QUE EXECUTAM ESSAS TRANSFERÊNCIAS E FORNECEM
+          INFORMAÇÕES AOS ENVOLVIDOS.
+          AS TAREFAS DOS GRUPOS, NESTE CHECKPOINT, SÃO: MONTAR UM MODELO RELACIONAL PARA RESOLVER 
+          O PROBLEMA; CRIAR OU GERAR AS TABELAS NECESSÁRIAS ATRAVÉS DE SQL; 
+           MONTANDO UM MODELO RELACIONAL E CRIANDO OS PROGRAMAS NECESSÁRIOS UTILIZANDO A 
+          LINGUAGEM PL-SQL, QUE ATENDAM OS SEGUINTES REQUISITOS.
+
+1- Programas PL-SQL para inserir, atualizar e eliminar dados de campus, cursos, turmas e alunos.
+2- Programa PL-SQL que recebam os dados do aluno necessários a transferência, verifique se a
+   turma, no curso e no campus solicitado é possivel dentro de um limite de quantidade de alunos
+   definido por turma, pode ser feito e em caso afirmativo, efetuá-la.
+3- Programa PL-SQL que confirmem se determinado aluno foi transferido apresentando dados sobre
+   a antiga e nova turma
+4- Programa PL-SQL que liste os alunos transferidos em determinada data, apresentando dados sobre
+   a antiga e nova turma
+
+-DATA FINAL DE ENTREGA: 30-05-21 AS 24:00
+-LOCAL: email: profjose.prata@fiap.com.br
+-Os dados do grupo devem ser entregues em arquivo texto podendo estar junto com os programas desde
+que esses esteja em arquivo texto.
+-O modelo relacional deve ser entregue ou como .dmd (data modeler) ou como imagem em pdf
+-Os grupos podem ser os mesmos e na mesma quantidade de alunos da challenge
+-Caso não receba um feedback sobre a entrega em 24:00 por favor me enviem um e-mail cobrando. OK
+
+
+Critérios:
+1- Entendimento do problema: 1 ponto
+2- Solução ( Identificação dos programas, Dados apresentados, 
+             Modelo relacional correto): 3 pontos
+3- Código: Clareza, código correto, atendimento dos requisitos, interação com usuário, etc: 5 pontos
+4- Entrega no prazo: 1 ponto podendo a entrega ser realizada até 3 dias depois, 
+                     mas com esse ponto descontado
+
+
+                             UM EXEMPLO DE SOLUÇÃO
+-----------------------------------------------------------------------------------------------------------------
+Regras de negócio: 1 campus tem várias cursos, mas um curso (código) só está em 1 campus. 
+                   1 curso tem várias turmas, mas uma turma só está em 1 curso
+                   1 aluno está matriculado em uma turma mas pode ser transferido para várias turmas diferentes
+
+-- CRIAÇÃO DO AMBIENTE NECESSÁRIO COM AS TABELAS c_turma E ALUNO
+-- EMBORA JÁ IREMOS FAZER A CRIAÇÃO DAS TABELAS CAMPUS E CURSO, PARA ESTE CHECKPOINT, ELAS NÃO SERÃO UTILIZADAS.
+-- AS PESQUISAS SE RESTRINGIRÃO AS TABELAS C_TURMA, C_ALUNO E UMA TABELA QUE CONTERÁ O HISTÓRICO DAS TRANSFERÊNCIAS.
+
+create table c_campus(id_campus number(4) primary key, nome_campus varchar2(15));
+
+create table c_curso(id_curso number(4) primary key, nome_curso varchar2(15),
+id_campus number(4) references c_campus);
+
+create table c_turma(id_turma number(4) primary key, 
+nome_turma varchar2(10) not null, id_curso number(4) references c_curso, vagas number(3));
+
+create table c_aluno(id_aluno number(6) primary key, 
+nome_aluno varchar2(20) not null, id_turma number(4)
+references c_turma );
+
+create table c_historico_transferencia (id_aluno number(6) references c_aluno, 
+id_turma_atual number(4) references c_turma, id_turma_anterior data_transf date, 
+constraint historico_pk_id_aluno_id_turma_data primary key(id_aluno,id_turma));
+
+
+SELECT * FROM c_aluno;
+SELECT * FROM c_turma;
+SELECT * FROM c_curso;
+SELECT * FROM c_campus;
+ 
+ 
+-------------------------------------------------------------------
+-------------------------------------------------------------------
+--programa pl/sql para inserir campus
+begin
+  insert into c_campus values(&vcampus,'&vnomecampus');
+  commit;
+exception
+  when dup_val_on_index then
+ dbms_output.put_line('chave primária duplicada');
+end; 
+/ 
+
+ ID_CAMPUS NOME_CAMPUS
+---------- ---------------
+         1 campus1
+         2 campus2
+
+-------------------------------------------------------------------
+--programa pl/sql para inserir curso  
+begin
+  insert into c_curso values(&vcurso,'&vnomecurso',&v_id_campus);
+  commit;
+exception
+  when dup_val_on_index then
+ dbms_output.put_line('chave primária duplicada');
+end;  
+/
+
+
+  ID_CURSO NOME_CURSO       ID_CAMPUS
+---------- --------------- ----------
+        10 matematica               1
+        11 computação               1
+        12 computação               2
+-------------------------------------------------------------------
+--programa pl/sql para inserir turma  
+begin
+  insert into c_turma values(&vturma,'&vnometurma',&v_id_vcurso,&vagas);
+    commit;
+exception
+  when dup_val_on_index then
+ dbms_output.put_line('chave primária duplicada');
+end; 
+/ 
+
+  ID_TURMA NOME_TURMA   ID_CURSO      VAGAS
+---------- ---------- ---------- ----------
+       100 turma100           10          5
+       101 turma101           10          4
+       102 turma102           11          5
+-------------------------------------------------------------------
+-- programa pl/sql para inserir aluno
+
+begin
+  insert into c_aluno values(&vra,'&vnome',&v_id_turma);
+  commit;
+exception
+  when dup_val_on_index then
+ dbms_output.put_line('chave primária duplicada');
+end;  
+/
+
+  ID_ALUNO NOME_ALUNO             ID_TURMA
+---------- -------------------- ----------
+      1000 jose silva                  101
+      1001 carlos santos               102
+      1002 luiza possi                 101
+      1003 carlos luiz ss              100
+      1004 ana carla                   100
+      1005 paulo x                     100
+      1006 luiz barbosa                100
+
+-----------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------
+/* programa que transfere o aluno caso haja vaga na turma solicitada, caso a turma tenha vagas.
+Em caso afirmativo, atualiza a tabela aluno com a nova turma e insere o aluno, nova turma,
+turma anterior e data da transferência na tabela c_historico_transferencia, para que possam ser
+feitas pesquisas de transferencia do aluno e também de todos os alunos transferidos em determinada
+data. */
+
+set serveroutput on
+declare
+  v_id_aluno c_aluno.id_aluno%type:=&digite_id_aluno;
+  v_id_turma_atual c_turma.id_turma%type;
+  v_id_turma_desejada c_turma.id_turma%type;
+  v_vagas c_turma.vagas%type;
+  v_conta_alunos c_turma.vagas%type;
+  desejada_igual_atual exception;
+
+begin
+
+   select id_turma into v_id_turma_atual from c_aluno where id_aluno=v_id_aluno;
+   dbms_output.put_line('A turma atual do aluno é:  '||v_id_turma_atual );
+ 
+   v_id_turma_desejada :=&digite_turma_desejada;
+
+   if v_id_turma_atual = v_id_turma_desejada then
+      raise desejada_igual_atual;
+   end if;
+    
+   /*contar alunos na turma desejada */
+   select count(id_aluno) into v_conta_alunos from c_aluno where id_turma = v_id_turma_desejada;
+   /* pesquisar a quantidade de vagas na turma desejada */
+
+dbms_output.put_line('conta:'||v_conta_alunos);
+
+   select vagas into v_vagas from c_turma where id_turma=v_id_turma_desejada;
+
+dbms_output.put_line('vagas:'||v_vagas);
+
+   if v_conta_alunos < v_vagas then
+          update c_aluno set id_turma = v_id_turma_desejada where id_aluno=v_id_aluno;
+
+          /* este insert abaixo é para atualizar o histórico, para poder pesquisar qual era a turma anterior e a turma atual do aluno*/
+          insert INTO c_historico_transferencia values(v_id_aluno,v_id_turma_desejada,sysdate,v_id_turma_atual); 
+   else
+        dbms_output.put_line('A turma desejada está no limite máximo!!');
+ 
+   end if;
+          
+exception
+   when desejada_igual_atual then
+        dbms_output.put_line('Esta é a turma atual do aluno! Não foi concluida a transferência!' );
+   when no_data_found then
+        dbms_output.put_line('Aluno ou turma não foram encontrados! Verifique!');
+end;
+/
+          
+------------------------------------------------------------------------------------------------------------
+--programa que mostra o histórico de transferências de um aluno especifico
+set serveroutput on
+declare
+  
+
+  CURSOR PESQ_transf IS SELECT * from c_historico_transferencia
+  WHERE id_aluno = &digite_id_aluno;
+ 
+  v_historico_transferencia c_historico_transferencia%rowtype;
+
+ 
+
+begin 
+  open  PESQ_transf;
+  loop
+     fetch pesq_transf into v_historico_transferencia;
+     if pesq_transf%rowcount <= 0 then
+         dbms_output.put_line('aluno não fez transferência'); 
+     end if;
+     exit when pesq_transf%notfound;
+     dbms_output.put_line('v_id_aluno:  '||v_historico_transferencia.id_aluno||'turma atual:'
+                            ||v_historico_transferencia.id_turma_atual
+                            ||'turma anterior:'|| v_historico_transferencia.id_turma_anterior
+                            ||'data mudança:'|| v_historico_transferencia.data_transf);
+  
+   end loop; 
+  
+ 
+end;
+/
+
+-----------------------------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------------------------
+--programa que mostra o histórico de transferências dos alunos em determinada data
+set serveroutput on
+declare
+  
+
+  CURSOR PESQ_transf_data IS SELECT * from c_historico_transferencia
+  WHERE data_transf like '&digite_data_desejada';
+ 
+  v_historico_transferencia c_historico_transferencia%rowtype;
+
+ 
+
+begin 
+  open PESQ_transf_data;
+  loop
+     fetch pesq_transf_data into v_historico_transferencia;
+     if pesq_transf_data%rowcount <= 0 then
+         dbms_output.put_line('Não há transferências nesta data'); 
+     end if; 
+     exit when pesq_transf_data%notfound;
+     dbms_output.put_line('v_id_aluno:  '||v_historico_transferencia.id_aluno||'turma atual:'
+                            ||v_historico_transferencia.id_turma_atual
+                            ||'turma anterior:'|| v_historico_transferencia.id_turma_anterior
+                            ||'data mudança:'|| v_historico_transferencia.data_transf);
+  
+   end loop; 
+  
+ 
+end;
+/
+
+----------------------------------------------------------------------------------------------
+
+
+ 

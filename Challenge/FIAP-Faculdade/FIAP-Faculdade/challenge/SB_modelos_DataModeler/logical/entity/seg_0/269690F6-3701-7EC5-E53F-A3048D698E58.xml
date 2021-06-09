@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="269690F6-3701-7EC5-E53F-A3048D698E58" name="T_SB_ITEM_RESGATE">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:19:28 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_item_resgate" id="9CF8B40B-611C-060B-ADF3-D84ACE87BFC8">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:20:00 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_resgate" id="6DCF6DDF-5F4B-F2B5-78B6-8C94B5444876">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:38:37 UTC</createdTime>
+<generatorID>B16BD299-B4E4-E4FB-8947-0AC838EF05A7</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<referedAttribute>D84FDFC4-B79D-68C1-BB08-DC48DBE9F3EF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tem" id="7222D984-1A44-08C0-0C00-8EF092190C21">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:38:44 UTC</createdTime>
+<generatorID>8A78600F-261E-253E-D1C9-D030ECC1C3D7</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<referedAttribute>01BC48C1-DAB2-4B68-503F-C1B3458F7DEA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="717A9D43-06A3-487A-1153-77EC80F5C5C5" name="T_SB_ITEM_RESGATE PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:21:03 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9CF8B40B-611C-060B-ADF3-D84ACE87BFC8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

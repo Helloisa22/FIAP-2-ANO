@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="00A9B245-15F1-736E-9DDF-AD40E4ADAE90" name="TB_ALUNO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:46:13 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_aluno" id="A2A1739A-F23D-2FB8-FAA7-EE2F6FF5138D">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:47:29 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_aluno" id="F7E4184D-7E10-F8B4-455B-0855D423B010">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:47:51 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="num_cpf" id="3179CF72-A266-E936-A64E-FE7FE1BDC709">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:48:14 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_turma" id="C6DB105E-4388-1E27-7F13-C8925E85A157">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:52:05 UTC</createdTime>
+<generatorID>3AE30E5E-9134-42D4-8128-1A2E68200B9E</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<referedAttribute>6C8FDA78-A468-FCC9-1474-6BFE772A7305</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="62B148D7-18AD-341B-4546-7E0083B1F2CB" name="TB_ALUNO PK">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:47:37 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A2A1739A-F23D-2FB8-FAA7-EE2F6FF5138D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

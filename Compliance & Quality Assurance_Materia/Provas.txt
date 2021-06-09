@@ -1,0 +1,52 @@
+A) Se encontra no nível 2 por ainda estar no desenvolvimento de Software para calcular as rotas de deslocamento dos Drones no ato da entrega, fazendo uma roterização das rotas para que os drones não colide um com o outro.Desenvolvimento de um aplicativo Android e IOS para receber dados das rotas traçadas, planos e ferramentas escolhidas pela gerencia traçadas e com expectativas de entregas.
+
+
+B) Funcionalidade: Aplicação front-End de facil acesso e manipulação.
+Portabilidade: Não a necessidade de um sistema a proprio para ser integrado ao sistema de rotas, apenas um aplicativo Android e IOS(mobile) para capitura de informações. subcaracterística(Capacidade para substituir): Caso apresente falhas no aplicativo com uma nova atualização com o GitHub como controle de versão do projeto assim de forma eficas ocorrendo a possibilidade de restaurar o sistemas para que não ocorra prejuizo as entregas.
+Eficiência: Entrega com eficacia e curto periodo, menor custo beneficio sobre taxa de entrega.
+
+
+D) O turno Noite apresenta comportamento Abaixo da média minima esperada, como forma de prevenção fazer uma média de quais dias tem o menor periodos da noitede entregas e fazer cupons de desconto para a viajem, sendo assim tornando mais barato a viajem do produto.
+
+
+
+
+git config --global user.name ""
+
+
+git config --global user.email 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Livro OCA Java SE 8
+Capítulo 6
+Pág. 385
+Self Test - 6/6
+Self Test 1 - 9/13
+Self Test 2 - 13/16
+Self Test 3 - 10/13
+Self Test 4 - 9/11
+Self Test 5 - 13/16
+Self Test 6 - 15/19
+
+Apostila FJ-11
+
+Capítulo 11
+Pág 144
+
+Apostila CS-14
+
+Capítulo 12
+Pág 133(Finalizado)

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9C6DC702-9A7B-55F7-68AE-EFCC2C4A3600" name="T_SB_TAREFA_TOPICO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 16:52:51 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tarefa_top" id="9250D1FA-657F-C040-69A6-5A04D230826A">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 16:55:35 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tarefa" id="52C21E18-BE1C-6F1F-B9BB-87B385961766">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:35:08 UTC</createdTime>
+<generatorID>9A8691B1-8A86-C6B8-B104-D9B449C1E661</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<referedAttribute>05F328CD-C5F2-EDD8-F458-E7B76ACC4318</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_topico" id="E812FB50-D77A-A514-1D52-6F43152649F6">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:36:27 UTC</createdTime>
+<generatorID>A7DD84FF-B4D3-5473-D108-CAAF299897A9</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<referedAttribute>76EEA15F-2630-BF75-8CC7-C09EBA39365C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77F98FEB-C62A-BA7C-D144-75B143BD00F0" name="T_SB_TAREFA_TOPICO PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 16:56:53 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9250D1FA-657F-C040-69A6-5A04D230826A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

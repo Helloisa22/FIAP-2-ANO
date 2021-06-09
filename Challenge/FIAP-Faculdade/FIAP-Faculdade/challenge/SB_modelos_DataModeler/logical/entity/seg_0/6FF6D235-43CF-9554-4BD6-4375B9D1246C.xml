@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6FF6D235-43CF-9554-4BD6-4375B9D1246C" name="T_SB_DEPARTAMENTO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:19:34 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_departamento" id="6A9D2333-0ABE-28C3-6035-58873363E33B">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:26:03 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="des_departamento" id="88CC9E19-0619-636B-4355-C2FEF7EFF50E">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:26:25 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="021839AA-C49D-632A-E223-55F66C070A77" name="T_SB_DEPARTAMENTO PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:26:22 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6A9D2333-0ABE-28C3-6035-58873363E33B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

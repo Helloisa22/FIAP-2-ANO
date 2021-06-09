@@ -1,0 +1,7 @@
+Azzure
+-> Arquitetura de soluções
+
+Modelos de qualidade, guias e normas para uma empresa.
+-> ISO 15504 - SPICE
+-> SPICE igual ao CMMi
+-> MPS.br -> Para pequenas empresas brasileiras

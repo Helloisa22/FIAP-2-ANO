@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+C:\Users\Proevento\Documents\FIAP-Faculdade\Interprise_Business_Enablement\.metadata\.plugins\org.eclipse.jdt.core
+309110635.index
+2047835584.index
+3556944252.index
+1602180266.index

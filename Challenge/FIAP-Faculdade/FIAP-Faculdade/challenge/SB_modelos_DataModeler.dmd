@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="SB_modelos_DataModeler" id="C18849D3-CDD5-B277-236A-AFF61768B96C" version="3.5">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 16:41:38 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>C18849D3-CDD5-B277-236A-AFF61768B96C</designId>
+</OSDM_Design>

@@ -1,0 +1,63 @@
+Esboço do desenho da aplicação mobile.
+
+Documentação explicando ideia principal do projeto que será desenvolvido.
+
+Prototipo pagina principal.
+
+Prototipo mobile inicial contendo pagina do usuario
+
+Prototipo mobile pagina de login.
+
+Prototipo mobile com pagina de premios 
+
+Prototipo mobile com pagina de localização mercadorias para funcionarios que trabalha na distribuição.
+
+Verificar sistema de localização de produtos indicado pelo aplicativo.
+
+Prototipo com dialogo inicial de boas vindas
+
+lista inicial com opções de duvidas que pode ser escolhida pelo usuario (onde fica localizada a sede).
+
+Resposta do chatboot sobre a questão (onde fica localizada a sede) com uma mensagem de retor caso o usuario apresente mais alguma duvida.
+
+lista inicial com opções de duvidas que pode ser escolhida pelo usuario (atrasei o apontamento do das horas trabalhadas).
+
+Resposta do chatboot sobre a questão (atrasei o apontamento do das horas trabalhadas) com uma mensagem de retor caso o usuario apresente mais alguma duvida.
+
+lista inicial com opções de duvidas que pode ser escolhida pelo usuario (como quitar o banco de horas negativado).
+
+Resposta do chatboot sobre a questão (como quitar o banco de horas negativado) com uma mensagem de retor caso o usuario apresente mais alguma duvida.
+
+Criação da mensagem de encerramento de dialogo.
+
+
+
+
+
+Canvas
+
+Problema -> O dinamismo tradicional das empresas que se estabelecem nos diversos setores do mercado atual trazem com si diversos problemas organizacionais, dentre eles a dificuldade de deixar claro uma comunicação entre administração, processamento e público alvo, a dificuldade do alto escalão das empresas de acompanhar as atribuições de seus funcionários junto da eficiência e efetividade dessas atribuições e a dificuldade que as empresas possuem de comprar, utilizar e organizar suas matérias primas de produção de uma maneira em que os fundos da entidade possam ser maximizados.
+
+Segmento de Clientes -> Colaboradores da empresa Plusoft, novos colaboradores que necessita mais atenção sobre as normas da empresa.
+
+Proposta de Valor -> Com a criação do sistema de localização de produtos em tempo real, chatboot para novos e velhos colaboradores tendo em vista otimização do tempo dos colaboradores da area de Recursos Humano com duvidas de baixo nivel, o valor para a aplicação inicial dos prototipos do nosso sistema será de 730 mil por tempo de trabalho de contrato de 2 anos e 4 meses.
+
+Solução -> Nós temos em pauta os seguintes objetivos para alcançar o necessário nas empresas que vamos englobar: 
+
+Resolva duvidas 24hr por dia com um sistema de chatbot 
+
+Sistema de gamificação e recompensas geradas das atribuições de funcionários 
+
+Sistema de localização de produtos em estoque 
+
+Sistema de treinamento de contratados a novas tecnologias disponibilizada pela empresa
+
+Canais -> Aplicatio mobile, chatboot com o colaborador 24 horas.
+
+Receita -> Valor inicial de Receita sera de aproximadamente 100 mil por 5 meses com entrega de prototipo mobile entregue para teste no dia a dia com os colaboradores, será apresentado para o colabora de forma gratuita a criação do usuario no nosso sistema.
+
+Estrutura de Custos -> Tempo de administração de recurso a longo prazo, rastreamento de ambientes para localização de produtos.
+
+Métricas Chave -> Aplicativo rapido e pratico com informações como metas a serem alcançadas, perfil do usuario, localização de produtos em tempo real.
+
+Vantagem Competitiva -> Com o app da Global solutions o colaborador terá mais autonomia sobre suas metas e conquista ao longo de sua atuação na empresa, tendo feddback de ponta a cada momento do seu dia, tendo em vista a grande passagens novos colaboradores pela empresa não sendo necessario que as pessoas da area de Recursos Humano fique o auxiliando a todo momento, tilizando o chatboot com duvidas a norma da empresa aonde fica localizado cada setor da instituição.

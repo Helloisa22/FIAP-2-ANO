@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="929B351A-8BFB-E954-CA93-D5282CA3260E" name="TB_ALUNO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>00A9B245-15F1-736E-9DDF-AD40E4ADAE90</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_aluno" id="69D9C8A3-1D7F-0C7F-AA7A-C71961CA361A">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>A2A1739A-F23D-2FB8-FAA7-EE2F6FF5138D</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_aluno" id="CE7DCA48-DDFA-D03B-A64B-105357C01981">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>F7E4184D-7E10-F8B4-455B-0855D423B010</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num_cpf" id="7854570F-DA04-576E-FE6E-5AD62ADB8D97">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>3179CF72-A266-E936-A64E-FE7FE1BDC709</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_turma" id="E3B43349-9A1F-F8AE-4B9F-AF382D9CC105">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>C6DB105E-4388-1E27-7F13-C8925E85A157</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8C8C63CF-6E48-02C0-3AE4-9BF8E92EF668" referredColumn="C4FBE948-2171-6D50-C9BF-9B79135C2461"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="38524E5F-F58F-2F16-2E83-D86920788393" name="PK_TB_ALUNO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>62B148D7-18AD-341B-4546-7E0083B1F2CB</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="69D9C8A3-1D7F-0C7F-AA7A-C71961CA361A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="29966FD9-A21D-5896-8586-217DE1B89C4A" name="FK_TB_TURMA">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>3AE30E5E-9134-42D4-8128-1A2E68200B9E</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E3B43349-9A1F-F8AE-4B9F-AF382D9CC105"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DA409507-B289-EC8A-AADE-742B5ADB81A0" name="TB_CAMPUS">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:46:43 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_campus" id="F270F5B7-64A8-9670-37D2-AED327B24773">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:49:30 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_campus" id="BCB0EBCA-FEE1-1DE3-35EB-660BA3EB8BB0">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:49:53 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19434F43-9155-CCC4-97C1-9ECB7EFB9807" name="TB_CAMPUS PK">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:49:40 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F270F5B7-64A8-9670-37D2-AED327B24773</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

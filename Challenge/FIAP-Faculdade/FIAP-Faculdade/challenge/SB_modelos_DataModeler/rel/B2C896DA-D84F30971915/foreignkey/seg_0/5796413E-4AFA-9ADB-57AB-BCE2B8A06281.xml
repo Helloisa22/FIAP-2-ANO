@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5796413E-4AFA-9ADB-57AB-BCE2B8A06281" containerWithKeyObject="29837143-6B97-5382-91F2-BE22AF736680" localFKIndex="49D84A99-03FC-95B9-BD41-00D7FED2D0E1" name="FK_SB_RESGATE_ITEM">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>B16BD299-B4E4-E4FB-8947-0AC838EF05A7</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<referredTableLongName>T_SB_RESGATE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>6303F41A-0C79-6A30-9308-242887C4D3D8</referredTableID>
+<keyObject>EEF5921B-F699-1572-37CD-54824C794621</keyObject>
+<referredKeyID>EEF5921B-F699-1572-37CD-54824C794621</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_resgate</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

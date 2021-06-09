@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<div class="card">
+    <p:tabMenu activeIndex="#{form-setup}">
+        <p:menuitem value="Home" outcome="../index.html" icon="pi pi-fw pi-home">
+            <f:param name="i" value="0"/>
+        </p:menuitem>
+        <!--<p:menuitem value="Calendar" outcome="index.html" icon="pi pi-fw pi-calendar">
+            <f:param name="i" value="1"/>
+        </p:menuitem>
+        <p:menuitem value="Edit" outcome="index.html" icon="pi pi-fw pi-pencil">
+            <f:param name="i" value="2"/>
+        </p:menuitem>
+        <p:menuitem value="Documentation" outcome="index.html" icon="pi pi-fw pi-file">
+            <f:param name="i" value="3"/>
+        </p:menuitem>
+        <p:menuitem value="Settings" outcome="index.html" icon="pi pi-fw pi-cog">
+            <f:param name="i" value="4"/>
+        </p:menuitem>-->
+        
+    </p:tabMenu>
+</div>
+
+
+	<p:card style="width: 25em">
+		<f:facet name="title">New Setup</f:facet>
+		<h:form>
+
+			<h:panelGrid columns="2">
+				<p:outputLabel value="Name" for="name" />
+				<p:inputText id="name" />
+
+				<p:outputLabel value="Description" for="description" />
+				<p:inputTextarea id="description" />
+
+				<p:outputLabel value="Price" for="price" />
+				<p:inputText id="price" />
+
+			</h:panelGrid>
+		</h:form>
+
+		<f:facet name="footer">
+			<p:commandButton icon="pi pi-check" value="Save" />
+			<p:commandButton icon="pi pi-times" value="Cancel"
+				styleClass="ui-button-secondary" style="margin-left: .5em" />
+		</f:facet>
+	</p:card>
+
+
+
+</h:body>
+</html>

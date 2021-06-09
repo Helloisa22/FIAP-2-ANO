@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E1FA3497-2405-1D65-1DD7-ED0E218FBA6F" name="T_SB_ITEM">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>CD20998B-0248-39CA-26A5-A4B5DDF0D26A</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tem" id="2E180E9D-68DC-F250-6ED5-BC4756639B44">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>01BC48C1-DAB2-4B68-503F-C1B3458F7DEA</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nom_item" id="58CCEEA5-5A57-9699-591F-0D60C8075B7D">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>EEFBEC16-53F6-F5C8-7ACB-E94CC1814D95</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="des_item" id="45383A7E-556D-C3F3-DB4C-02E4CA14FABB">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>91C10190-50AE-963B-0372-E892A9A9D03A</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sta_ativo" id="A69C0567-6DE8-1FE6-B677-F42CBB851516">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>A03AAE13-5946-72A7-D978-86265CA41C1B</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3AABCAFE-6493-3F8C-0732-80E0239CE70C" name="T_SB_ITEM_PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>54B437A4-750B-DFC8-57DF-316E67782CE3</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2E180E9D-68DC-F250-6ED5-BC4756639B44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

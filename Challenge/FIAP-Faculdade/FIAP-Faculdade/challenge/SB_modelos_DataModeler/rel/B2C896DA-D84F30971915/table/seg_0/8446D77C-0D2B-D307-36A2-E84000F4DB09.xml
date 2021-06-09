@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8446D77C-0D2B-D307-36A2-E84000F4DB09" name="T_SB_FUNCIONARIO_DEPARTAMENTO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>554AC524-F55E-C6E0-B916-DCCAD1D32884</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_func_departamento" id="B49C9856-5215-E6A0-BD00-76D52C17624E">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>67228BD3-DB86-1FDD-7D4E-EE45F83057F5</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_funcionario" id="5CCA756F-351F-AEA6-7978-6B694E6A2214">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>19850D84-C527-125E-FF4A-4406FBD4E600</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="041FA6C1-EBEA-357C-63CA-E5176252EADC" referredColumn="825B85F0-FD50-EE42-FA6B-39F946075386"/>
+</associations>
+</Column>
+<Column name="id_departamento" id="14C53A86-BE4B-89E3-A323-4E1E34556CC1">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>CDA6CEE3-C4B4-036F-E041-0C0FC0492147</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81EF2425-C89D-AA0E-D41F-0DDAB763AE50" referredColumn="F4E8D803-9DAC-DD62-C313-96D69CEE5730"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A1DE9816-7197-8009-AD03-3D4AC8C5459E" name="PK_SB_FUNCI_DEPARTA">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>0083FD1A-1846-790B-DEFF-73A140C29990</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B49C9856-5215-E6A0-BD00-76D52C17624E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="80360D62-3F3D-0EC9-5B32-FEEA9899DF88" name="T_SB_FUNCI_DEPARTA_IDX">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>39D93A91-D546-0F89-F78F-6A7B63C0C288</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="5CCA756F-351F-AEA6-7978-6B694E6A2214"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3EDAC566-346E-3018-40B1-4207E68E47E3" name="FK_SB_DEPARTA_FUNCI">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>39D93A91-D546-0F89-F78F-6A7B63C0C288</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5CCA756F-351F-AEA6-7978-6B694E6A2214"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="76F1BCB3-4E76-4210-31D3-284E06A8F159" name="FK_SB_FUNCI_DEPARTA">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>29831112-BD3B-5639-A5E7-4186553B4DBF</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="14C53A86-BE4B-89E3-A323-4E1E34556CC1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

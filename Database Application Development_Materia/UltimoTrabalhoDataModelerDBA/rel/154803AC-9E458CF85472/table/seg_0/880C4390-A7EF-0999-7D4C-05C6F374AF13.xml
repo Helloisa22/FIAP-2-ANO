@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="880C4390-A7EF-0999-7D4C-05C6F374AF13" name="TB_CAMPUS">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>DA409507-B289-EC8A-AADE-742B5ADB81A0</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_campus" id="B3308B56-995C-089A-F9F1-DD46F3DF8655">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>F270F5B7-64A8-9670-37D2-AED327B24773</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_campus" id="0DC20A1F-A522-1AB9-74FB-350135A6F78B">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>BCB0EBCA-FEE1-1DE3-35EB-660BA3EB8BB0</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EB5D10A6-7AF6-E97C-79BE-EC2D31AD787E" name="PK_TB_CAMPUS">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>19434F43-9155-CCC4-97C1-9ECB7EFB9807</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B3308B56-995C-089A-F9F1-DD46F3DF8655"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

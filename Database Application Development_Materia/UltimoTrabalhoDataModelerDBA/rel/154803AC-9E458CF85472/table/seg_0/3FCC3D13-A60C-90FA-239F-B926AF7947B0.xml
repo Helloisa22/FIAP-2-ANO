@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3FCC3D13-A60C-90FA-239F-B926AF7947B0" name="TB_TURMA">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>61A1CCE0-5AA5-A868-08F1-A57C3E86A3DB</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_turma" id="C4FBE948-2171-6D50-C9BF-9B79135C2461">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>6C8FDA78-A468-FCC9-1474-6BFE772A7305</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome_turma" id="E4D908E1-D91B-E472-DF22-83D1CA364AC1">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>9EC33621-96D1-255E-5963-FDCAFE2AE4E0</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="period_turma" id="3744D921-903F-4913-FC16-1036B89C16B0">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 04:08:03 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F559BA35-E0F9-82C4-1CF5-90BD088E7F0F" name="PK_TB_TURMA">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>CE719C87-781D-9A56-EDBB-8188B79FF10E</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C4FBE948-2171-6D50-C9BF-9B79135C2461"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

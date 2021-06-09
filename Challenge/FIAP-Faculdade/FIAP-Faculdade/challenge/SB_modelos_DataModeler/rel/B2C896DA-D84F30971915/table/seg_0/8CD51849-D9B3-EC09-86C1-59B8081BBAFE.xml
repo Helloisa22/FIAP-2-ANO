@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8CD51849-D9B3-EC09-86C1-59B8081BBAFE" name="T_SB_PREMIO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>D864AD5D-2A78-7FF2-1B87-3B79EED3206D</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_premio" id="BF96B5F6-CB01-8509-A58C-08CA007C8069">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>1991FCFD-6264-0C3A-F1F6-7701BA599075</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tp_premio" id="74A797E1-1F58-3DE1-C4DF-92A8C6BEEED0">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>D75D1754-0BA3-C5A8-3918-62F87349BEC9</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sta_ativo" id="BCEE1040-C45C-8B8C-77F2-1A1EC290B852">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>8010F642-C35E-566A-9BE5-E316DDD9EFDD</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qtd_premio" id="7AF41754-1C1B-B435-06D5-17912ACFF396">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>41C7AEF3-1F3D-4B75-3101-F7A3E11B8FEF</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_resgate" id="53D4B9B6-5D0D-E4EF-AA2E-3A0F333136E4">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>2E0D4306-9991-2E25-B2D3-2AEF56C0C382</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2D338BCB-B0A7-D6A8-DBE3-727BBD558127" referredColumn="6552E0DD-201A-19E4-37DD-5D5340F48089"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C3AFE6B0-7600-3B2B-17BE-D596BD3D8730" name="PK_SB_PREMIO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>2DE6B114-5D78-8D1D-49A5-97818FE41CFE</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BF96B5F6-CB01-8509-A58C-08CA007C8069"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8C509BC0-F206-DAAA-DFFF-648310DF7225" name="T_SB_PREMIO_IDX">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>CF69C695-834F-EC86-7B12-B6DEBF0626F4</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="53D4B9B6-5D0D-E4EF-AA2E-3A0F333136E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DA65997E-68E0-441A-3840-5FC77C67402C" name="FK_SB_PREMIO_RESGATE">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>CF69C695-834F-EC86-7B12-B6DEBF0626F4</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="53D4B9B6-5D0D-E4EF-AA2E-3A0F333136E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

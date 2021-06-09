@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A6603DF6-F796-79F9-5511-EDC7E2773C25" name="TB_CURSO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>A5A697FA-4912-BCE0-C115-28C125CC3870</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_curso" id="1DED4F7D-9529-E6EA-1CDE-CC31ECD88552">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>773A6852-01E2-B660-3B64-AE5BABC037AA</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8311178B-D014-EC71-CBA6-B1D8880A8A2C" referredColumn="36385EDE-F159-AD38-C6D8-3CFCAB088253"/>
+</associations>
+</Column>
+<Column name="nome_curso" id="82A787C0-0FAC-5DB0-87E1-C520CC779CFC">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>AFA59070-1042-BDA9-7E94-D5B0C5F5CFF4</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_turma" id="CD37481E-EFDC-EA56-EB40-BC109C515488">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>83C36DF2-D004-E704-A35E-F06E43A403E4</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="92C05AF5-882E-5C78-B6A4-1F191961587F" referredColumn="C4FBE948-2171-6D50-C9BF-9B79135C2461"/>
+</associations>
+</Column>
+<Column name="id_campus" id="36385EDE-F159-AD38-C6D8-3CFCAB088253">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 04:04:22 UTC</createdTime>
+<generatorID>6DF9A2E4-1AC1-B3CE-D7F8-464FC853352B</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4423DD90-0BA5-CFD6-476A-B9783CB013EB" name="PK_TB_CURSO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>AB8CB977-D5EE-AB14-C961-D462312D6BE9</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DED4F7D-9529-E6EA-1CDE-CC31ECD88552"/>
+<colUsage columnID="36385EDE-F159-AD38-C6D8-3CFCAB088253"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D1CD25DF-27D7-0A24-DB27-1A40C74FDC29" name="TB_CURSO__IDX">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>B9AFFB55-9FE5-5F96-715B-9C67195C72C0</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CD37481E-EFDC-EA56-EB40-BC109C515488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B8A93AE-0A0A-8AB5-DE4B-93FD5BBFFA50" name="FK_TB_TURMAv2">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>B9AFFB55-9FE5-5F96-715B-9C67195C72C0</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CD37481E-EFDC-EA56-EB40-BC109C515488"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66596016-23D7-E968-BB9C-E06A542A3887" name="FK_TB_CURSO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:54:35 UTC</createdTime>
+<generatorID>CC4FFC85-0B36-B4B1-7BBD-6665E1F21F1B</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1DED4F7D-9529-E6EA-1CDE-CC31ECD88552"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,50 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09EC7914-D128-F768-5C42-0B4117D96EF8" name="T_SB_TOPICO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>BC4F8E82-C7D7-2882-E136-1F8C77E2DE33</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_topico" id="0261E935-E743-9C01-1D68-66C524944DCE">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>76EEA15F-2630-BF75-8CC7-C09EBA39365C</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="des_topico" id="1DDEDCE0-1A43-DC5A-B84F-8F2CA1066CB7">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>A35C5916-86C3-BE9D-F3B3-B714626FF82B</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="644A8254-97FF-EE0F-2975-F167EB0F4F8A" name="T_SB_TOPICO_PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>39319EA1-66FC-EACD-8143-26B087DEBC67</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0261E935-E743-9C01-1D68-66C524944DCE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

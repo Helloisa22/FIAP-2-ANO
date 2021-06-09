@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DFD073AE-5A0C-EDE4-1F23-F97E938390D9" name="T_SB_TAREFA_TOPICO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>9C6DC702-9A7B-55F7-68AE-EFCC2C4A3600</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tarefa_top" id="3CD44508-C006-DD05-AD7E-35CFC2364922">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>9250D1FA-657F-C040-69A6-5A04D230826A</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_tarefa" id="64710E6D-6174-A150-7ACD-361722E9CFA6">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>52C21E18-BE1C-6F1F-B9BB-87B385961766</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="ECAD1EF1-F9CF-3FBA-A994-81C329A6A2DE" referredColumn="361CDC93-97AA-2F72-5F63-B1B6AE8D5C74"/>
+</associations>
+</Column>
+<Column name="id_topico" id="532A1877-C338-94C5-A2E9-DA3095334318">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>E812FB50-D77A-A514-1D52-6F43152649F6</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="97086185-E128-44AD-DBF3-5ABBC2DBB0A2" referredColumn="0261E935-E743-9C01-1D68-66C524944DCE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05E91482-433B-8ECC-5F51-2D24454FE2B8" name="PK_SB_TAREFA_TOPICO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>77F98FEB-C62A-BA7C-D144-75B143BD00F0</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CD44508-C006-DD05-AD7E-35CFC2364922"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1562AFC9-88D7-8C7D-4B6A-69538EFBD5DD" name="FK_SB_TAREFA_TOPICO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>9A8691B1-8A86-C6B8-B104-D9B449C1E661</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="64710E6D-6174-A150-7ACD-361722E9CFA6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="318ACD0C-7D83-820C-DD86-6D68B200F20A" name="FK_SB_TOPICO_TAREFA">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>A7DD84FF-B4D3-5473-D108-CAAF299897A9</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="532A1877-C338-94C5-A2E9-DA3095334318"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

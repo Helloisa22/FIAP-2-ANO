@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="ECAD1EF1-F9CF-3FBA-A994-81C329A6A2DE" containerWithKeyObject="DFD073AE-5A0C-EDE4-1F23-F97E938390D9" localFKIndex="1562AFC9-88D7-8C7D-4B6A-69538EFBD5DD" name="FK_SB_TAREFA_TOPICO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>9A8691B1-8A86-C6B8-B104-D9B449C1E661</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<referredTableLongName>T_SB_TAREFA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>61EE1695-1F6A-6AEE-1AD1-F5DA949DA6EB</referredTableID>
+<keyObject>5D08BA79-8230-67BF-3225-C404E7309363</keyObject>
+<referredKeyID>5D08BA79-8230-67BF-3225-C404E7309363</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tarefa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

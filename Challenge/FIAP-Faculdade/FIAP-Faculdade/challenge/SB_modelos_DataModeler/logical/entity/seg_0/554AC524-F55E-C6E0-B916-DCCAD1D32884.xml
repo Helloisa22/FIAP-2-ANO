@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="554AC524-F55E-C6E0-B916-DCCAD1D32884" name="T_SB_FUNCIONARIO_DEPARTAMENTO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:19:32 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_func_departamento" id="67228BD3-DB86-1FDD-7D4E-EE45F83057F5">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:24:46 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_funcionario" id="19850D84-C527-125E-FF4A-4406FBD4E600">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:37:52 UTC</createdTime>
+<generatorID>39D93A91-D546-0F89-F78F-6A7B63C0C288</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<referedAttribute>17E2D00D-111C-ACF6-9944-A15F20758929</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_departamento" id="CDA6CEE3-C4B4-036F-E041-0C0FC0492147">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:39:15 UTC</createdTime>
+<generatorID>29831112-BD3B-5639-A5E7-4186553B4DBF</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<referedAttribute>6A9D2333-0ABE-28C3-6035-58873363E33B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0083FD1A-1846-790B-DEFF-73A140C29990" name="T_SB_FUNCIONARIO_DEPARTAMENTO PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:25:19 UTC</createdTime>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<engineerTo>
+<item key="B2C896DA-1A6A-210A-C2A1-D84F30971915" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>67228BD3-DB86-1FDD-7D4E-EE45F83057F5</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

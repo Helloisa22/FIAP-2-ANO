@@ -1,0 +1,41 @@
+CHECKPOINT 2 - 2TDS - DISCIPLINA: DATABASE DEVELOPMENT APPLICATION
+
+PROBLEMA: UMA ESCOLA POSSUI DEZENAS DE CAMPUS, CENTENAS DE CURSOS, MILHARES DE TURMAS E MILHÕES 
+          DE ALUNOS. PRECISA CONTROLAR TUDO ISSO, MAS A NECESSIDADE MAIS URGENTE É A TRANSFERÊNCIA 
+          DE TURMA QUE SÃO SOLICITADAS PELOS ALUNOS.  EMBORA DISPONHA DE TODAS AS INFORMAÇÕES 
+          NECESSÁRIAS, AS RECLAMAÇÕES DOS ALUNOS SÃO CONSTANTES E JÁ FOI IDENTIFICADO QUE O 
+          PROBLEMA SÃO OS PROGRAMAS QUE EXECUTAM ESSAS TRANSFERÊNCIAS E FORNECEM
+          INFORMAÇÕES AOS ENVOLVIDOS.
+          AS TAREFAS DOS GRUPOS, NESTE CHECKPOINT, SÃO: MONTAR UM MODELO RELACIONAL PARA RESOLVER 
+          O PROBLEMA; CRIAR OU GERAR AS TABELAS NECESSÁRIAS ATRAVÉS DE SQL; 
+           MONTANDO UM MODELO RELACIONAL E CRIANDO OS PROGRAMAS NECESSÁRIOS UTILIZANDO A 
+          LINGUAGEM PL-SQL, QUE ATENDAM OS SEGUINTES REQUISITOS.
+
+1- Programas PL-SQL para inserir, atualizar e eliminar dados de campus, cursos, turmas e alunos.
+2- Programa PL-SQL que recebam os dados do aluno necessários a transferência, verifique se a
+   turma, no curso e no campus solicitado é possivel dentro de um limite de quantidade de alunos
+   definido por turma, pode ser feito e em caso afirmativo, efetuá-la.
+3- Programa PL-SQL que confirmem se determinado aluno foi transferido apresentando dados sobre
+   a antiga e nova turma
+4- Programa PL-SQL que liste os alunos transferidos em determinada data, apresentando dados sobre
+   a antiga e nova turma
+
+-DATA FINAL DE ENTREGA: 30-05-21 AS 24:00
+-LOCAL: email: profjose.prata@fiap.com.br
+-Os dados do grupo devem ser entregues em arquivo texto podendo estar junto com os programas desde
+que esses esteja em arquivo texto.
+-O modelo relacional deve ser entregue ou como .dmd (data modeler) ou como imagem em pdf
+-Os grupos podem ser os mesmos e na mesma quantidade de alunos da challenge
+-Caso não receba um feedback sobre a entrega em 24:00 por favor me enviem um e-mail cobrando. OK
+
+
+
+Critérios:
+1- Entendimento do problema: 1 ponto
+2- Solução ( Identificação dos programas, Dados apresentados, 
+             Modelo relacional correto): 3 pontos
+3- Código: Clareza, código correto, atendimento dos requisitos, interação com usuário, etc: 5 pontos
+4- Entrega no prazo: 1 ponto podendo a entrega ser realizada até 3 dias depois, 
+                     mas com esse ponto descontado
+
+

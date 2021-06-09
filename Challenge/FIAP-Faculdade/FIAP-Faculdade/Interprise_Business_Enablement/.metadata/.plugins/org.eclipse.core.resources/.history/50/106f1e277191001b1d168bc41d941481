@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:f="http://java.sun.com/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<title>Insert title here</title>
+</h:head>
+<h:body>
+	<p:card style="width: 25em">
+    <f:facet name="header">
+        <img alt="user header" src="../../resources/demo/images/usercard.png"/>
+    </f:facet>
+    <f:facet name="title">New Setup</f:facet>
+    <h:form>
+		
+		<h:panelGrid columns="2">
+			<p:outputLabel value="Name" for="name" />
+			<p:inputText id="name" />
+
+			<p:outputLabel value="Description" for="description" />
+			<p:inputTextarea id="description" />
+
+			<p:outputLabel value="Price" for="price" />
+			<p:inputText id="price" />
+
+			<p:commandButton value="Save" action="#{setupBean.executar}" />
+		</h:panelGrid>
+	</h:form>
+
+    <f:facet name="footer">
+        <p:commandButton icon="pi pi-check" value="Save"/>
+        <p:commandButton icon="pi pi-times" value="Cancel" styleClass="ui-button-secondary" style="margin-left: .5em"/>
+    </f:facet>
+</p:card>
+	
+	
+	
+</h:body>
+</html>

@@ -1,0 +1,85 @@
+/*
+Grupo OrionSolution
+ 
+Gabriel Meireles			RM:80913
+Gustavo dos Santos de Melo		RM:86394
+Marcus Vinicius Titanero Guelfi		RM:86223
+Henrique Akira Yasuda			RM:86349
+Kelly Naomi Mitsuishi			RM 84299
+Vinicius De Nani Mazinetti 		RM:84310
+*/
+
+/* 
+Regras de Negócio Aplicadas:
+01- Não pode cadastrar mais de 10 turmas no mesmo campus
+02- Não pode cadastrar mais de 4 alunos na mesma turma
+03- Não pode cadastrar um aluno em uma turma que não existe
+*/
+
+
+--INSERÇÃO DA TURMA
+
+
+SET SERVEROUTPUT ON
+DECLARE
+  V_CONTA      NUMBER(2);
+  CONTA_TURMA EXCEPTION;
+  PRAGMA EXCEPTION_INIT(CONTA_TURMA,-20001); 
+  CAMPUS number(3):=&DIGITE_CAMPUS;
+
+BEGIN
+   SELECT COUNT(ID_TURMA) INTO V_CONTA FROM TB_TURMA where CAMPUS_TURMA=CAMPUS;
+   IF V_CONTA >= 10 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Não podem ser inclusos novas turmas nesse campus!'); 
+   ELSE 
+        INSERT INTO TB_TURMA VALUES (&DIGITE_NUMERO_TURMA,'&digite_nome_turma',CAMPUS);
+   END IF; 
+EXCEPTION
+   WHEN CONTA_TURMA THEN
+        DBMS_OUTPUT.PUT_LINE(sqlcode);
+        DBMS_OUTPUT.PUT_LINE(sqlerrm);
+   WHEN DUP_VAL_ON_INDEX THEN
+        DBMS_OUTPUT.PUT_LINE('Chave primária duplicada!');
+   WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro desconhecido!');
+END;
+/
+
+
+
+--INSERÇÃO DO ALUNO
+
+
+SET SERVEROUTPUT ON
+DECLARE
+  V_CONTA      NUMBER(2);
+  CONTA_ALUNO EXCEPTION;
+  PRAGMA EXCEPTION_INIT(CONTA_ALUNO,-20001); 
+  FK_NOTFOUND EXCEPTION;
+  PRAGMA EXCEPTION_INIT(FK_NOTFOUND, -2291);
+  NUMERO_TURMA NUMBER(3):=&DIGITE_TURMA;
+BEGIN
+   SELECT 
+        COUNT(ID_NUMERO) 
+   INTO V_CONTA 
+   FROM TB_ALUNO 
+   WHERE ID_TURMA=NUMERO_TURMA;
+
+   IF V_CONTA >= 4 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Não podem ser inclusos novos alunos!'); 
+   ELSE 
+        INSERT INTO TB_ALUNO 
+        VALUES (&DIGITE_NUMERO_ALUNO,'&digite_nome_aluno',NUMERO_TURMA);
+   END IF; 
+EXCEPTION
+   WHEN CONTA_ALUNO THEN
+        DBMS_OUTPUT.PUT_LINE(sqlcode);
+        DBMS_OUTPUT.PUT_LINE(sqlerrm);
+   WHEN FK_NOTFOUND THEN
+        DBMS_OUTPUT.PUT_LINE('Turma não encontrada');
+   WHEN DUP_VAL_ON_INDEX THEN
+        DBMS_OUTPUT.PUT_LINE('Chave primária duplicada!');
+   WHEN OTHERS THEN
+        DBMS_OUTPUT.PUT_LINE('Erro desconhecido!');
+END;
+/

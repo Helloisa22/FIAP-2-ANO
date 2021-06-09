@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="61EE1695-1F6A-6AEE-1AD1-F5DA949DA6EB" name="T_SB_TAREFA">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>F4AD20C1-0495-A453-2949-B8C9AAEA8DCF</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tarefa" id="361CDC93-97AA-2F72-5F63-B1B6AE8D5C74">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>05F328CD-C5F2-EDD8-F458-E7B76ACC4318</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_funcionario" id="11F0C90C-8DCE-79D8-BBD7-CEBC3BD5AD50">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>C1CB8F75-F299-3E9D-033F-DBFF8A8688CA</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="718B7914-173B-24D2-B513-7253F4FD2F3B" referredColumn="825B85F0-FD50-EE42-FA6B-39F946075386"/>
+</associations>
+</Column>
+<Column name="des_tarefa" id="986FDD8E-8A7C-D47D-1373-3C853BD6DAC5">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>EDD6AC0E-9058-1978-3D69-354A988586F5</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sta_ativo" id="66FA61B9-8B32-544B-A823-BF5D4FF727E7">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>2EB5799F-8B65-A068-9F9C-3631C97C0E3E</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="obs_tarefa" id="2C127835-B087-9132-882C-0CD58BBB934E">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>5CFD15CC-FD8A-7EA0-642F-14CC6FD5614E</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<ownDataTypeParameters>250,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5D08BA79-8230-67BF-3225-C404E7309363" name="T_SB_TAREFA_PK">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>6A6BAAF3-D8C6-B2CB-94DF-E23C221E7115</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="361CDC93-97AA-2F72-5F63-B1B6AE8D5C74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F2FEFCAE-0D5B-1E4C-5512-8152FE5FE4EF" name="FK_SB_TAREFA_FUNCIONARIO">
+<createdBy>Proevento</createdBy>
+<createdTime>2021-04-04 17:59:19 UTC</createdTime>
+<generatorID>7B661D3D-AE6F-AFAE-A73F-BFF623F0BF38</generatorID>
+<ownerDesignName>SB_modelos_DataModeler</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="11F0C90C-8DCE-79D8-BBD7-CEBC3BD5AD50"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

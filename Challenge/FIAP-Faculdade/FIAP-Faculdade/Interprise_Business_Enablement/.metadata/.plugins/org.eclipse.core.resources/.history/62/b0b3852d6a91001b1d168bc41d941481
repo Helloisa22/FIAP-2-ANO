@@ -1,0 +1,7 @@
+package br.com.fiap.beans;
+
+public class SetupBean {
+	public void executar() {
+		System.out.println("Acionando o Bean");
+	}
+}

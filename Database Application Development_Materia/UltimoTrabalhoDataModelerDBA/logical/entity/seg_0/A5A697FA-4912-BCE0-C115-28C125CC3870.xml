@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A5A697FA-4912-BCE0-C115-28C125CC3870" name="TB_CURSO">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:47:12 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_curso" id="773A6852-01E2-B660-3B64-AE5BABC037AA">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:50:16 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome_curso" id="AFA59070-1042-BDA9-7E94-D5B0C5F5CFF4">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:50:47 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>170</dataTypeSize>
+<ownDataTypeParameters>170,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_turma" id="83C36DF2-D004-E704-A35E-F06E43A403E4">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:52:58 UTC</createdTime>
+<generatorID>B9AFFB55-9FE5-5F96-715B-9C67195C72C0</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="false"/>
+</engineerTo>
+<referedAttribute>6C8FDA78-A468-FCC9-1474-6BFE772A7305</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_campus" id="6DF9A2E4-1AC1-B3CE-D7F8-464FC853352B">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:53:44 UTC</createdTime>
+<generatorID>CC4FFC85-0B36-B4B1-7BBD-6665E1F21F1B</generatorID>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="false"/>
+</engineerTo>
+<referedAttribute>F270F5B7-64A8-9670-37D2-AED327B24773</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="AB8CB977-D5EE-AB14-C961-D462312D6BE9" name="TB_CURSO PK">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 03:50:23 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<engineerTo>
+<item key="154803AC-EBE7-B8F7-0B71-9E458CF85472" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>773A6852-01E2-B660-3B64-AE5BABC037AA</attributeRef>
+<attributeRef>6DF9A2E4-1AC1-B3CE-D7F8-464FC853352B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

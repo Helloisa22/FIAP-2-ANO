@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="UltimoTrabalhoDataModelerDBA" id="248326A7-35F5-8144-1B5B-B6A2FAEAD06D" version="3.5">
+<createdBy>hello</createdBy>
+<createdTime>2021-06-03 02:52:58 UTC</createdTime>
+<ownerDesignName>UltimoTrabalhoDataModelerDBA</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>248326A7-35F5-8144-1B5B-B6A2FAEAD06D</designId>
+</OSDM_Design>
